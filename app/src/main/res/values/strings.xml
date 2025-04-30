@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="toss">Throw Toss</string>
+    <string name="play_again">Play Again</string>
+    <string name="player1_turn">Player 1\'st Turn</string>
+    <string name="player2_turn">Player 2\'nd Turn</string>
+    <string name="player1_won">Player 1 Won🎇🎉</string>
+    <string name="player1_won_toss">Player 1 Won Toss</string>
+    <string name="player2_won">Player 2 Won🎇🎉</string>
+    <string name="player2_won_toss">Player 2 Won Toss</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="clear_all">Clear All</string>
+    <string name="this_is_an_image">This is an image</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="draw">It\'s a Draw</string>
+    <string name="select_your_letter">Select your letter</string>
+    <string name="total_wins">👇Total Wins👇</string>
+    <string name="player_1">Player 1:</string>
+    <string name="player_2">Player 2:</string>
+</resources>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridLay"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/tic_tac_toe"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+
+    <GridLayout
+        android:id="@+id/gridLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_centerInParent="true"
+        >
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <View
+            android:id="@+id/btn1View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn2View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn3View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn4View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn5View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn6View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn7View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn8View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardBtnStyle"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btn9View"
+            style="@style/cardTextStyle"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/resetGameLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLay"
+        android:layout_marginStart="17dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_marginTop="70dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/resetGameBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/circle_btn_img"
+            android:background="@drawable/circle_shape"
+            android:scaleType="fitXY"
+            android:clipToOutline="true"
+            android:contentDescription="@string/this_is_an_image"
+            tools:ignore="UnusedAttribute"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/reset_game"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gridLay"
+        android:layout_marginEnd="17dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/clearAllBtn"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            app:srcCompat="@drawable/circle_btn_img"
+            android:background="@drawable/circle_shape"
+            android:scaleType="fitXY"
+            android:clipToOutline="true"
+            android:contentDescription="@string/this_is_an_image"
+            tools:ignore="UnusedAttribute"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/clear_all"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck" />
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/toss_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stroke_bg"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:padding="5dp"
+        android:text="@string/toss"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/gridLay"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/gameResultTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/stroke_bg"
+        android:layout_marginEnd="40dp"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@id/toss_txt"
+        tools:text="Result"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/totalWinsLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/resetGameLay">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/totalWinsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:text="@string/total_wins"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/player1WinsCountTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke_bg"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text="@string/player_1"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/toss_txt"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/player2WinsCountTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/stroke_bg"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text="@string/player_2"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_below="@id/toss_txt"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</RelativeLayout>
